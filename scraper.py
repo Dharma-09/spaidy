@@ -76,5 +76,3 @@ movies['metascore'] = pd.to_numeric(movies['metascore'], errors='coerce')
 movies['us_grossMillions'] = movies['us_grossMillions'].map(lambda x: x.lstrip('$').rstrip('M'))
 movies['us_grossMillions'] = pd.to_numeric(movies['us_grossMillions'], errors='coerce')
 
-# to move all your scraped data to a CSV file
-movies.to_csv('movies.csv')
